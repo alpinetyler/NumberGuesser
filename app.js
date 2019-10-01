@@ -78,12 +78,15 @@ function gameOver(won, msg){
     let color;
     won === true ? color = 'green' : color = 'red';
 
+
     // Disable input
     guessInput.disabled = true;
     // Change border color
     guessInput.style.borderColor = color;
     // Set text color
     message.style.color = color;
+    // Set Text Size
+    // message.style.fontSize = '24px';
     // Set message
     setMessage(msg)
 
@@ -101,5 +104,6 @@ function getRandomNum(min, max){
 // Set message
 function setMessage(msg, color){
     message.style.color = color;
+    // message.style.fontSize = '94px'
     message.textContent = msg;
 }
